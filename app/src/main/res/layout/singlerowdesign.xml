@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:visibility="gone"
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="1"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/recid"/>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="200dp"/>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="White Shoes"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:id="@+id/recpname"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="250"
+            android:textSize="30dp"
+            android:id="@+id/recpprice"/>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/incbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#ffff"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center"
+            android:src="@drawable/incr"/>
+
+
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:id="@+id/recqnt"/>
+
+
+        <ImageView
+            android:id="@+id/decbtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="7dp"
+            android:layout_gravity="center"
+            android:src="@drawable/decr"/>
+
+        <ImageButton
+            android:id="@+id/delbtn"
+            android:layout_margin="7dp"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="#ffff"
+            android:layout_gravity="center"
+            android:src="@drawable/delete"/>
+            </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+
+    android:id="@+id/my_drawer_layout"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_gravity="center"
+    android:textAlignment="center"
+    tools:context=".dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:fitsSystemWindows="true"
+
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+             <androidx.appcompat.widget.Toolbar
+        android:id="@+id/a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:subtitleTextColor="#1E1C1C"
+        app:title="Harshada Mart"
+        app:titleTextColor="#090808" />
+
+
+
+<ScrollView
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_gravity="start"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <RelativeLayout
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="start"
+
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/avvena"
+                android:layout_gravity="start"
+
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+
+
+                android:layout_height="80dp" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_gravity="start"
+
+                android:layout_height="100dp"
+                android:id="@+id/banner"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+
+                android:paddingTop="3dp"
+                android:text="Shop From Top Categories"
+                android:textColor="#151313"
+                android:textSize="16dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="start"
+
+                android:orientation="horizontal"
+                android:id="@+id/varun"
+                android:layout_marginTop="3dp"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:text="Stream On The Go"
+                android:textColor="#151313"
+                android:textSize="16dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/card"
+                android:layout_gravity="start"
+
+                android:orientation="vertical"
+                />
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+                        <RelativeLayout
+        android:layout_marginTop="60dp"
+
+        android:id="@+id/category"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:visibility="gone"
+        android:background="@color/purple_500"
+
+        />
+                             <RelativeLayout
+        android:layout_marginTop="60dp"
+
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:visibility="gone"
+        android:background="@color/teal_200"
+
+
+        />
+                    <RelativeLayout
+
+        android:id="@+id/cart"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/headerpanel"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:textColor="#181717"
+                    android:layout_marginLeft="10dp"
+                    android:text="My Cart"/>
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_below="@+id/headerpanel"
+                android:id="@+id/scroller"
+                android:layout_height="600dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recview"/>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/InnerRelativeLayout"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="50dp"
+                android:paddingLeft="5dp"
+                android:background="@color/colorPrimary"
+                android:layout_alignParentBottom="true"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="#181717"
+                    android:id="@+id/rateview"
+                    android:textSize="18dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Total Amount : INR 600"/>
+
+                <Button
+                    android:id="@+id/pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#ADF954"
+                    android:text="Checkout"
+                    android:padding="10dp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+                    </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
+                        <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation" android:layout_width="match_parent"
+
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        app:mbn_circleColor="@color/pink"
+        app:mbn_backgroundBottomColor="@color/pink"
+        app:mbn_countBackgroundColor="#ff6f00" app:mbn_countTextColor="#ffffff"
+        app:mbn_defaultIconColor="#fff" app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="#ffffff" app:mbn_shadowColor="#1f212121" />
+
+    </LinearLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navimumbai"
+        app:menu="@menu/iconmenu"
+        android:background="@color/white"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
